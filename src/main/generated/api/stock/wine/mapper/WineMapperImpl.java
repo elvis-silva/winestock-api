@@ -6,7 +6,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-07-23T17:13:35-0300",
+    date = "2022-07-24T12:21:33-0300",
     comments = "version: 1.5.2.Final, compiler: javac, environment: Java 11.0.15 (Oracle Corporation)"
 )
 public class WineMapperImpl implements WineMapper {

@@ -16,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/wines")
-@AllArgsConstructor
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class WineController implements WineControllerDocs {
 
     private final WineService wineService;
@@ -38,6 +38,7 @@ public class WineController implements WineControllerDocs {
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteById(Long id) throws WineNotFoundException {
         wineService.deleteById(id);
     }
